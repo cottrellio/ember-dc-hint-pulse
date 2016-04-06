@@ -1,0 +1,1 @@
+export {default} from 'ember-dc-hint-pulse/components/dc-hint-pulse/component'

@@ -1,0 +1,10 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<h2 id="title">Welcome to `ember-dc-hint-pulse`</h2>
+
+{{#dc-hint-pulse name="test-pulse"
+                dismissedHints=(readonly dismissedHints)
+                onDismiss=(action "didDismissPulse")}}
+    <p>Check out this new feature! You're welcome!</p>
+{{/dc-hint-pulse}}
+
+{{outlet}}

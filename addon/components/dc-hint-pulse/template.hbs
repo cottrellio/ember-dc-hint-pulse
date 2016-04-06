@@ -1,0 +1,16 @@
+{{#unless isDismissed}}
+    <div class="dc-pulse-container" {{action 'onClick'}}>
+        <div class="dc-pulse"></div>
+        {{#if hintIsVisible}}
+            <i class="fa fa-close"></i>
+        {{else}}
+            <i class="fa fa-question-circle"></i>
+        {{/if}}
+    </div>
+    {{#if hintIsVisible}}
+        <div class="dc-hint">
+            {{yield}}
+            <button {{action 'onDismiss' this.name}}>Dismiss</button>
+        </div>
+    {{/if}}
+{{/unless}}
